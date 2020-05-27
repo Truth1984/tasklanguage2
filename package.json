@@ -1,0 +1,25 @@
+{
+  "name": "tl2",
+  "version": "1.0.0",
+  "description": "workflow controller, tasklanguage2",
+  "keywords": [
+    "workflow",
+    "task",
+    "tasklanguage",
+    "assembly"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Truth1984/tasklanguage2.git"
+  },
+  "author": "awada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Truth1984/tasklanguage2/issues"
+  },
+  "homepage": "https://github.com/Truth1984/tasklanguage2#readme"
+}
