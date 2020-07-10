@@ -48,6 +48,10 @@ and inside `func` call `next(name?)` to jump to next one
 
 `task.storage` won't reset after each run.
 
+#### async runAuto(name?)
+
+auto jump to next command after each function call, doesn't need to manually call next()
+
 #### \_NOOP
 
 do nothing, call `next()`
