@@ -6,7 +6,7 @@ super elegant implementation of `tasklanguage`
 
 ```js
 var tasklang = require("tl2");
-var task = new tasklang({ apple: 12 });
+var task = new tasklang({ apple: 12 }, console.log);
 
 task.add("add 3", (store, next) => {
   store.apple += 3;
@@ -37,6 +37,12 @@ task.run().then(() => console.log(task.storage));
 ```
 
 ## API
+
+#### constructor(initialStorage = {}, logMethod?)
+
+`logMethod` should be a self-defined function and will pass in
+
+`(param:{index:number,name:string,func:()=>{},param:[]})=>{}`
 
 #### add(name, func, ...param?)
 
