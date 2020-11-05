@@ -16,7 +16,7 @@ const toLogs = (method, cmds, i) => {
 
 module.exports = class {
   /**
-   * @param {(param:{index:number,name:string,func:()=>{},param:[]})=>{}} logMethod
+   * @param {(param:{index:number,method:string,func:()=>{},param:[]})=>{}} logMethod
    */
   constructor(storage = {}, logMethod) {
     this.storage = storage;
