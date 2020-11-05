@@ -11,7 +11,7 @@ const getIndex = (cmds, name) => {
 };
 
 const toLogs = (method, cmds, i) => {
-  if (method != undefined) return method({ index: i, name: cmds[i].name, func: cmds[i].func, param: cmds[i].param });
+  if (method != undefined) return method({ index: i, method: cmds[i].name, func: cmds[i].func, param: cmds[i].param });
 };
 
 module.exports = class {
