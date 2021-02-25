@@ -51,7 +51,7 @@ module.exports = class {
     checkName(this._localcmd);
     for (let i = getIndex(this._localcmd, name); i < this._localcmd.length; i++) {
       toLogs(this._logMethod, this._localcmd, i);
-      let next = (names) => (i = names === undefined ? i : this._localcmd.findIndex((item) => item.name === names));
+      let next = (names) => (i = names === undefined ? i : this._localcmd.findIndex((item) => item.name === names) - 1);
       await this._localcmd[i].func(this.storage, next, ...this._localcmd[i].param);
     }
   }
